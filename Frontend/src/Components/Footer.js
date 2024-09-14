@@ -3,12 +3,7 @@ import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 import "./Footer.css";
 
 const Footer = () => {
-  const [emailContent, setEmailContent] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    window.location.href = `mailto:akhileshkr17122002@gmail.com?body=${encodeURIComponent(emailContent)}`;
-  };
+ 
 
   return (
     <div className="footer">
@@ -37,19 +32,6 @@ const Footer = () => {
             </a>
           </div>
           <h4>Email</h4><h5>akhileshkr17122002@gmail.com</h5>
-        </div>
-        <div className="form1-container column">
-          <h2 className="heading1">Send Me a Message</h2>
-          <form onSubmit={handleSubmit}>
-            <input
-              type="text1"
-              placeholder="Your message"
-              className="form1-input"
-              value={emailContent}
-              onChange={(e) => setEmailContent(e.target.value)}
-            />
-            <button type="submit" className="form1-button">Send Email</button>
-          </form>
         </div>
       </div>
       <p className="bottomText1">© 2024 Akhilesh. All rights reserved.</p>

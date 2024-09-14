@@ -72,7 +72,7 @@ const Form = () => {
     <div className="form-container">
       <div className="form-wrapper">
         <form onSubmit={handleSubmit}>
-          <h2>Contact Us</h2>
+          <h2>Contact Me</h2>
           <label>
             Your Email
             <input
